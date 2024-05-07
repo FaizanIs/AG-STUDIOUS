@@ -1,0 +1,303 @@
+html{
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#000,#170269);
+    color: #fff;
+    height: 100vh;
+font-family: "Poppins",sans-serif;
+
+width: 100%;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+
+.logo h2{
+font-size: 3.5rem;
+cursor: pointer;
+}
+li{
+     list-style-type: none;
+}
+header {
+    background: #000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 2.4rem;
+   
+}
+
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: inline-block;
+  color: #fff;
+    padding: 5px 0;
+    margin: 0 30px;
+    
+    text-transform: uppercase;
+    transition: 0.2s;
+   
+
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+   
+    border-bottom: 4px solid dodgerblue;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    opacity: 1;
+
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    margin-right: 6rem;
+    background: #fff;
+
+
+}
+
+
+@media only screen and (max-width: 900px) {
+   
+    .container {
+        flex-direction: column;
+    }
+    .pastworks{
+        display: flex;
+        flex-direction: column;
+    }
+
+.footerNav ul li a{
+    margin-right: 5rem;
+}
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #000;
+       
+        transition: 0.3s;
+        opacity: 0;
+     
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+        opacity: 1;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+
+.red {
+    color: red;
+}
+
+.about {
+    width: 70%;
+  
+     font-family: Arial, sans-serif; 
+     font-size: 3rem; 
+     line-height: 1.5; 
+     text-align: justify;
+     padding: 1rem;
+     cursor: pointer;
+}
+.about:hover p{
+         opacity: 0.6;
+}
+
+.cnt {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: orange;
+box-shadow: 1px 0.5px 20px 1px whitesmoke;
+    border-radius: 7.5px;
+}
+.cnt:hover .hdn{
+display: block;
+
+}
+.cnt:hover{
+    background-color: cyan;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    box-shadow: 2px 1px 40px 2px whitesmoke;
+    border-radius: 15px;
+}
+.hdn {
+    display: none;
+}
+.cnt:hover .nmr{
+    display: none;
+}
+
+
+    @media(max-width:998px){
+    html{
+    font-size: 55%;     
+   }       
+   .about {
+    font-size: 2rem;
+   }
+}
+      @media(max-width:768px){
+    html{
+    font-size: 45%;     
+   }       
+}
+
+
+
+
+
+
+
+.footer {
+    background: linear-gradient(#000, #170269);
+    position: fixed; /* Changed to fixed */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Aligned to the left edge */
+    width: 100%;
+    padding: 20px; /* Adjusted padding */
+    margin-top: 5rem;
+}
+
+.footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Hover effect on social media icon */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    margin: 0 20px;
+}
+
+.footerNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+

@@ -1,0 +1,333 @@
+html{
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#000,#170269);
+	color: #fff;
+	height: 100vh;
+font-family: "Poppins",sans-serif;
+
+width: 100%;
+}
+.heder h1, .header h3{
+	text-align: center;
+	font-size: 4.8rem;
+margin-top: 5rem;
+
+}
+.red{
+	color: red;
+}
+
+
+.heder h3{
+	text-align: center;
+	font-size: 3rem;
+	opacity: 1;
+}
+.heder h3 .normal{
+	color: orange;
+}
+
+.box {
+	width: 400px;
+	height: 400px;
+	border: 5px solid #fff;
+	padding: 2rem;
+	border-radius: 15px;
+	box-shadow: 2px 0 20px 0px whitesmoke;
+	cursor: pointer;
+	animation: shade 2s 1s infinite linear;
+    font-size: 3rem;
+    margin: 15rem 0;
+}
+.box:hover{
+	animation: none;
+	opacity: 0.5;
+}
+   @keyframes shade{
+   	0% {
+   		box-shadow: 2px 0 20px 0px whitesmoke;
+   	}
+   	50%{
+   		box-shadow: 2px 0 50px 0px whitesmoke;
+   	}
+   	100%{
+   		box-shadow: 2px 0 20px 0px whitesmoke;
+   	}
+   }
+
+
+.content{
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+
+}
+.box mod{
+	
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+    @media(max-width:998px){
+    html{
+    font-size: 55%;     
+   }
+  .content {
+      
+  transform: scale(0.8);
+}
+}
+  
+   
+
+      @media(max-width:768px){
+    html{
+    font-size: 45%;     
+   }       
+      
+
+  
+
+
+  .content {
+margin-left: -5rem;
+   flex-direction: column;
+   gap: 2rem;
+   margin-top: -15rem;
+ 
+}    
+
+   
+}
+ 
+
+
+
+
+
+
+.logo h2{
+font-size: 3.5rem;
+cursor: pointer;
+}
+li{
+     list-style-type: none;
+}
+header {
+    background: #000;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 2.4rem;
+   
+}
+
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: inline-block;
+  color: #fff;
+    padding: 5px 0;
+    margin: 0 30px;
+    
+    text-transform: uppercase;
+    transition: 0.2s;
+   
+
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+   
+    border-bottom: 4px solid dodgerblue;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+    opacity: 1;
+
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    margin-right: 6rem;
+    background: #fff;
+
+
+}
+
+
+@media only screen and (max-width: 900px) {
+   
+    .container {
+        flex-direction: column;
+    }
+    .pastworks{
+        display: flex;
+        flex-direction: column;
+    }
+
+.footerNav ul li a{
+    margin-right: 5rem;
+}
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #000;
+    
+        transition: 0.3s;
+        opacity: 0;
+     
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+        opacity: 1;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    background: linear-gradient(#000, #170269);
+    position: fixed; /* Changed to fixed */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Aligned to the left edge */
+    width: 100%;
+    padding: 20px; /* Adjusted padding */
+    margin-top: 5rem;
+}
+
+.footerContainer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Hover effect on social media icon */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li {
+    margin: 0 20px;
+}
+
+.footerNav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+
+
